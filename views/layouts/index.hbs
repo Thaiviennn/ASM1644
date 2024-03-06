@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+
+    <style>
+        /* Tùy chỉnh CSS cho trang chủ */
+        /* ... */
+        .container-img {
+            width: 220px;
+            height: 330px;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+        }
+        .card-body{
+            font-family: "Arsenal", arial, tahoma;
+        }
+        body {
+            background-image: ;
+            width: 1000px;
+            
+            margin: auto;
+            padding: auto;
+        }
+        .footer {
+            width: 968px;
+            height: 438px;
+                -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            color: #000;
+            font-style: normal;
+            font-size: 13px;
+            line-height: 1.75;
+            font-family: "Arsenal", arial, tahoma;
+            font-weight: normal;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: none;
+            outline-offset: 0;
+            display: block;
+        }
+        .footer-v1 .middle-footer {
+            background-color: #fff;
+            border-top: 1px solid #000;
+        }
+        .footer .middle-footer {
+            padding: 80px 0;
+        }
+        .container-fluid {
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            color: #000;
+            font-style: normal;
+            font-size: 13px;
+            line-height: 1.75;
+            font-family: "Arsenal", arial, tahoma;
+            font-weight: normal;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: none;
+            outline-offset: 0;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .footer .middle-footer .logo-footer {
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+        .footer-contact li {
+            display: flex;
+            width: 100%;
+            margin-bottom: 18px;}
+         
+        .footer .middle-footer h6 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #222;
+            text-transform: capitalize;}  
+            .footer .middle-footer .col-sm-6:not(:last-child) {
+            margin-bottom: 50px;}
+            .col-xs-12 {
+            width: 100%;
+            font-family: "Arsenal", arial, tahoma;
+        }
+        .block-link ul li {
+            display: inline-block;
+            float: left;
+            width: 100%;
+            line-height: 30px;
+            margin-bottom: 5px;
+        }
+.block-link ul li:first-child a {
+    margin-top: 0;
+}
+.block-link ul li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #000;}
+.footer .middle-footer .col-sm-6:not(:last-child) {
+    margin-bottom: 50px;
+    height: 227px;
+    width: 484px;
+}
+.col-xs-12 {
+    width: 100%;
+}
+.footer .middle-footer h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222;
+    text-transform: capitalize;
+    font-family: "Arsenal", arial, tahoma;
+}
+.block-link ul li {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 5px;}
+.block-link ul li:first-child a {
+    margin-top: 0;
+} 
+.block-link ul li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+} 
+h6{
+    display: block;
+    margin: 0;
+    line-height: 1.428;
+    letter-spacing: 0.5px;
+    font-family: "Arsenal", arial, tahoma;
+}
+
+.footer .bottom-footer {
+    padding: 20px 0;
+    line-height: 1;
+} 
+.footer .main-link {
+    display: -webkit-inline-flex;
+    -webkit-justify-content: center;
+}  
+.footer .main-link li a {
+    margin: 0 5px;
+    display: inline-block;
+    color: #000000;
+    line-height: 1.75;
+}  
+
+    </style>
+</head>
+
+<body>
+    <!-- Header của trang -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <h4>List product</h4>
+
+            <a href="/index/add-product" class="add-product">Add new product</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        {{!-- <a class="nav-link" href="index/order">Đơn hàng</a> --}}
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <div class="nav-link dropdown text-right">
+                            Hello!<a class="dropdown-toggle text-primary" data-toggle="dropdown">{{name}}</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/login">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-info-circle"></i>
+                                        &nbsp;&nbsp;Update infomation
+                                    </a>
+                                    <a class="dropdown-item" href="/index/logOut">
+                                        <i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp; Log out</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Danh sách sản phẩm -->
+    <div class="container my-5">
+        <div class="message">
+            <p class="messages text-center text-success"></p>
+            {{#if message}}
+            <p class="text-center text-success">{{message}}</p>
+            {{/if}}
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Sản phẩm 1 -->
+            {{#each products}}
+            <div class="col">
+                <div class="card h-100">
+                    <div class="container-img">
+                        <img src="{{this.imageProduct}}" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a class="text-decoration-none text-dark"
+                                href="/index/detail-product/{{this.id}}">{{this.nameProduct}}</a>
+                        </h5>
+                        <p class="card-text id">ID: {{this.id}}</p>
+                        <p class="card-text price">Price: {{this.priceProduct}} đ</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <button class="btn btn-success update-item" data-toggle="modal" data-target="#update-dialog"
+                            data-id='{{this.id}}'>Update</button>
+                        <button class="btn btn-danger remove-item" data-toggle="modal" data-target="#confirm-delete"
+                            data-id='{{this.id}}'>Delete</button>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+
+
+
+    <!-- Delete dialog -->
+    <div class="modal fade" id="confirm-delete">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Xóa sản phẩm</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    Bạn có chắc rằng muốn xóa <strong class="product-delete">image.jpg</strong>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-delete" data-dismiss="modal">Xóa</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+	    <div id="footer-v1" class="footer footer-v1">
+            <section class="middle-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 row-sm-first">
+                            <div class="logo-footer"><img src="https://xipi.vn/media/wysiwyg/logo.png" ></div>                    
+                                <ul class="footer-contact">
+                                    <li>XIPI là thương hiệu thời trang thiết kế và sản xuất tại Việt Nam. Chúng tôi tập trung vào những mẫu thiết kế tinh tế, sang trọng phù hợp với những người phụ nữ hiện đại.
+                                    <br>
+Chúng tôi luôn cố gắng mang lại trải nghiệm tốt nhất cho khách hàng khi mua sắm và sử dụng các sản phẩm tại XIPI.
+                                    </li>
+                                </ul>       
+                            </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="block-quicklinks block-link">
+                                <h6>HỖ TRỢ MUA HÀNG</h6>
+                                    <div class="block-content">
+                                        <ul>
+                                            <li><a href="/size-guide">Size Guide</a></li>
+                                            <li><a href="/shipping">Chính Sách Giao Hàng</a></li>
+                                            <li><a href="/payment">Phương Thức Thanh Toán</a></li>
+                                            <li><a href="/return-and-exchange">Chính Sách Đổi Trả</a></li>
+                                            <li><a href="/xipixu">Tích điểm XIPI XU</a></li>
+                                        </ul>
+                                    </div>
+                            </div>                   
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="block-categories block-link">
+                                <h6>Về Chúng Tôi</h6>
+                                    <div class="block-content">
+                                        <ul>
+                                            <li><a href="https://xipi.vn/storelocator/">Hệ Thống Cửa Hàng</a></li>
+                                            <li><a href="https://xipi.vn/privacy">Chính Sách Bảo Mật</a></li>
+                                            <li><a href="http://hr.xipi.vn/" target="_blank">Tuyển Dụng</a></li>
+                                        </ul>
+                                    </div>
+                            </div>                    
+                        </div>
+                            {{!-- <section class="bottom-footer">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                            <address class="copy">
+                                                <ul class="main-link">
+                                                    <li><a href="https://xipi.vn/bestseller#">Home</a></li>
+                                                    <li><a href="https://xipi.vn/bestseller#">Shop</a></li>
+                                                    <li><a href="https://xipi.vn/bestseller#">About</a></li>
+                                                    <li><a href="https://xipi.vn/bestseller#">Contact</a></li>
+                                                    <li><a href="https://xipi.vn/bestseller#">Blog</a></li>
+                                                </ul>                        
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section> --}}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    {{!-- <div class="footer" data-test="secFooterbar" style="opacity: 1; min-height: 100%; height: 100%;">
+        <div class="footer__logo col-24 has-text-centered" style="opacity: 0.9797;">
+            <a href="https://www.chanel.com/vn/" class data-event-label="homepage" style="opacity: 0;">
+                <svg viewBox="0 0 1 0.16" aria-hidden="true" class="logo" focusable="false" data-test="lblChanelLOGO">
+                    <use xlink:herf="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chanel_logo.svg/2560px-Chanel_logo.svg.png"></use>
+                </svg>
+                <span class="is-sr-only" data-test="lblLogo_Footerbar">Trang chu CHANEL</span>
+            </a>
+        </div>
+        <div class="container js-container" style="opacity: 0.9797;">
+            <div class="row footer__row" role="list">
+                <div class="footer__sections col-24 clo-m-8 col-l-6 push-m-2" role="listiem">
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                    <div class="footer__sections-container">
+                        <p class="heading is-6" data-test="lblTitele_Footerbar">Kham pha CHANEL.com</p>
+                        <ul class="links-list">
+                            <li class>
+                                <a href="https://www.chanel.com/vn/haute-couture/" class="link footer_navigation" data-event-action="explore chanel" 
+                                    data-event-label="haute couture"> Haute Couture
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/fashion/" class="link footer_navigation" data-event-action="explore chanel" data-event-label="fashion"> Thoi Trang
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/trang-suc-cao-cap/" class="link footer_navigation" data-event-action="explore chanel" data-event-label="high jewelry"> Trang suc Cao Cap
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/trang-suc/" class="link footer_navigation" data-event-action="explore chanel" data-event-label="fine jewelry"> Trang suc
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/mat-kinh/" class="link footer_navigation" data-event-action="explore chanel" data-event-label="eyewear"> Mat kinh
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/dong-ho/" class="link footer_navigation" data-event-action="explore chanel" data-event-label="watches"> Dong ho
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/nuoc-hoa/" class="link footer_navigation" data-event-action="explore chanel" data-event-label="fragrance"> Nuoc hoa
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/trang-diem/" class="link footer_navigation" data-event-action="explore chanel" data-event-label="makeup"> Trang diem
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/cham-soc-da/" class="link footer_navigation" data-event-action="explore chanel" data-event-label="skincare"> Cham soc da
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                </div>
+                <div class="footer__sections col-24 col-m-8 col-l-6" role="listitem">
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                    <div class="footer__sections-container">
+                        <p class="heading is-6" data-test="lblTitele_Footerbar">Dich vu tai cua hang 
+                        </p>
+                        <ul class="links-list">
+                            <li class>
+                                <a href="https://www.chanel.com/vn/storelocator/" class="link footer_navigation" data-event-action="online services" data-event-label="store locator"> He thong cua hang</a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/care-services/book-appointment/" class="link footer_navigation" data-event-action="online services" data-event-label="appointments with chanel"> Lich hen voi CHANEL</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                </div>
+                <div class="footer__sections col-24 col-m-8 col-l-6 push-m-2" role="listitem">
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                    <div class="footer__sections-container">
+                        <p class="heading is-6" data-test="lblTitele_Footerbar">Thuong hieu CHANEL</p>
+                        <ul class"links-list">
+                            <li class>
+                                <a href="https://services.chanel.com/i18n/en_US/pdf/Report_to_Society.pdf" class="link footer_navigation" rel="nofollow" target="_blank" data-event-action="boutique services" data-event-label="report to society"> Bao cao doanh nghiep</a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/anti-counterfeit/" class="link footer_navigation" data-event-action="boutique services" data-event-label="fighting counterfeits"> Chong hang gia</a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/financial-results/" class="link footer_navigation" data-event-action="boutique services" data-event-label="financial results"> Ket qua tai chinh</a>
+                            </li>
+                        </ul> --}}
+                    {{!-- </div>
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                </div>
+                <div class="footer__sections col-24 col-m-8 col-l-6" role="listitem">
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                    <div class="footer__sections-container">
+                        <p class="heading is-6" data-test="lblTitele_Footerbar">Dich vu truc tuyen</p>
+                        <ul class"links-list">
+                            <li class>
+                                <a href="https://www.chanel.com/vn/careers/" class="link footer_navigation" rel="nofollow" target="_blank" data-event-action="the house of chanel" data-event-label="careers"> Nghe nghiep</a>
+                            </li>
+                            <li class>
+                                <a href="https://services.chanel.com/vi_VN/privacy" class="link footer_navigation" rel="nofollow" target="_blank" data-event-action="the house of chanel" data-event-label="privacy"> Bao mat</a>
+                            </li>
+                            <li class>
+                                <a href="https://services.chanel.com/vi_VN/policies/legal" class="link footer_navigation" rel="nofollow" target="_blank" data-event-action="the house of chanel" data-event-label="legal"> Phap ly </a>
+                            </li>
+                            <li class>
+                                <a href="https://services.chanel.com/vi_VN/faq" class="link footer_navigation" rel="nofollow" target="_blank" data-event-action="the house of chanel" data-event-label="faq"> Cau hoi thuong gap </a>
+                            </li>
+                            <li class>
+                                <a href="https://www.chanel.com/vn/cham-soc-va-dich-vu/" class="link footer_navigation" rel="nofollow" target="_blank" data-event-action="the house of chanel" data-event-label="care & services"> Cham soc va dich vu </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                    <!--Start: Attributes for Analytics -->
+                    <!--end: Attributes for Analytics -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+ --}}
+
+    <!-- Update dialog -->
+    <div class="modal fade" id="update-dialog">
+        <div class="modal-dialog">
+            <form method="post" id="updateProductForm">
+
+                <div class=" modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Cập nhật sản phẩm</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name">Tên sản phẩm</label>
+                            <input name="nameProduct" type="text" placeholder="Tên sản phẩm" class="form-control"
+                                id="new-name-product" />
+                        </div>
+                        <div class="form-group">
+                            <label for="content">Giá sản phẩm</label>
+                            <input name="priceProduct" type="number" placeholder="Giá sản phẩm" class="form-control"
+                                id="new-price-product" />
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success confirm-update">Lưu</button>
+
+                    </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

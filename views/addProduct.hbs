@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add New Product</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container mt-5">
+
+        <h2 class="mb-4">Thêm sản phẩm mới</h2>
+        <form action="/index/add-product" enctype="multipart/form-data" method="POST" class=" form-add-product">
+            <div class="form-group">
+                <label for="productName">Tên sản phẩm:</label>
+                <input type="text" class="form-control" id="productName" name="productName"
+                    placeholder="Enter product name" required />
+            </div>
+            <div class="form-group">
+                <label for="price">Giá:</label>
+                <input type="number" class="form-control" id="price" name="price" placeholder="Enter price" required />
+            </div>
+            <div class="form-group">
+                <label for="image">Ảnh:</label>
+                <input type="file" class="form-control-file" id="image" name="image" required />
+            </div>
+            <div class="form-group">
+                <label for="description">Mô tả:</label>
+                <textarea class="form-control" id="description" name="description" rows="3"
+                    placeholder="Enter product description" required></textarea>
+            </div>
+            {{#if message}}
+            <p class="text-danger text-size-25">{{message}}</p>
+            {{/if}}
+            <button type="submit" class="btn btn-primary mr-3">Thêm sản phẩm</button>
+            <a href="/index" class="btn btn-secondary">Trở về</a>
+        </form>
+
+    </div>
+    <script src="/js/addProduct.js"></script>
+</body>
+
+</html>
